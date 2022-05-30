@@ -1,0 +1,115 @@
+{
+  "swagger": "2.0",
+    "info": {
+      "title": "MEPOUPE - API",
+      "description": "API for ZipCode(CEP) query and average between two number",
+      "version": "1.0"
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/average/": {
+        "post": {
+          "summary": "Average",
+          "description": "Average between two numbers",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "Numbers",
+              "description": "Average between two numbers",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "numberOne": {
+                    "type": "integer"
+                  },
+                  "numberTwo": {
+                    "type": "integer"
+                  }
+                },
+                "example": {
+                  "numberOne": "5.13",
+                  "numberTwo": "8.919"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Average success"
+            },
+            "400": {
+              "description": "Erro.message"
+            },
+            "500": {
+              "description": "Generic Error"
+            }
+          }
+        }
+      },
+      "/cep/{cep}": {
+        "get": {
+          "summary": "Find",
+          "description": "Find CEP",
+          "parameters": [
+            {
+              "in": "path",
+              "name": "cep",
+              "type": "integer",
+              "required": "true",
+              "description": "Find CEP"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Find success"
+            },
+            "400": {
+              "description": "Erro.message"
+            },
+            "500": {
+              "description": "Generic Error"
+            }
+          }
+        }
+      },
+      "/info/": {
+        "get": {
+          "summary": "Ready",
+          "description": "Ready API",
+          "responses": {
+            "200": {
+              "description": "Ready success"
+            },
+            "500": {
+              "description": "Generic Error"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Average": {
+        "type": "object",
+        "properties": {
+          "numberOne": {
+              "type": "integer"
+          },
+          "numberTwo": {
+            "type": "integer"
+        }
+        }
+      },
+      "Cep": {
+        "type": "object",
+        "properties": {
+          "cep": {
+              "type": "string"
+          }
+        }
+      }
+    }
+}
