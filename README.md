@@ -61,7 +61,7 @@ A fim de calcular a média entre dois números, foi configurado o seguinte endpo
 
 ### 3.2. Cep
 
-A fim de realizar a consulta de CEP, foi configurado o seguinte endpoint: <http://localhost:4000/cep/:cep>. Obs.: Necessário adicionar a rota o CEP.
+A fim de realizar a consulta de CEP, foi configurado o seguinte endpoint: <http://localhost:4000/cep/:cep>. Obs.: Necessário adicionar à rota o CEP.
 
 ### 3.3. Doc
 
