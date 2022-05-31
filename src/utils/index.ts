@@ -24,7 +24,6 @@ export const isCep = (cep: string) => {
   return false;
 };
 
-export const timeExp = 60 * 5;
 export const addressOne = {
   cep: '18150-000',
   logradouro: '',
