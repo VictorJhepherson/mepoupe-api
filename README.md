@@ -1,4 +1,4 @@
-# cep-api
+# mepoupe-api
 
 1. [Descrição](#1-descrição)
 2. [Inicio rápido](#2-inicio-rápido)
