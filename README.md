@@ -38,16 +38,22 @@ Em ambos os casos, o projeto irá subir na porta 4000, e portando você pode ver
 localhost:4000/
 ```
 
+O comando a seguir é para executar a aplicação dentro do container.
+
+``` bash
+docker-compose up
+```
+
 ## 3. Componentes
 
 Esta API possui a seguinte estrutura de componentes:
 
-| Componente    | Descrição                          | Endpoint                            |
-| ------------- | ---------------------------------- | ----------------------------------- |
-| **_Average_** | Calcula a média entre dois números | <http://localhost:4000/users>       |
-| **_Cep_**     | Consulta CEP                       | <http://localhost:4000/cep>         |
-| **_Doc_**     | Documentação da API                | <http://localhost:4000/doc>         |
-| **_Info_**    | Informações da API                 | <http://localhost:4000/info>        |
+| Componente    | Descrição                          | Endpoint                                 |
+| ------------- | ---------------------------------- | ---------------------------------------- |
+| **_Average_** | Calcula a média entre dois números | <http://localhost:4000/users>            |
+| **_Cep_**     | Consulta CEP                       | <http://localhost:4000/cep/:cep>         |
+| **_Doc_**     | Documentação da API                | <http://localhost:4000/doc>              |
+| **_Info_**    | Informações da API                 | <http://localhost:4000/info>             |
 
 ### 3.1. Average
 
@@ -55,7 +61,7 @@ A fim de calcular a média entre dois números, foi configurado o seguinte endpo
 
 ### 3.2. Cep
 
-A fim de realizar a consulta de CEP, foi configurado o seguinte endpoint: <http://localhost:4000/cep>. Obs.: Necessário estar logado.
+A fim de realizar a consulta de CEP, foi configurado o seguinte endpoint: <http://localhost:4000/cep/:cep>. Obs.: Necessário adicionar a rota o CEP.
 
 ### 3.3. Doc
 
