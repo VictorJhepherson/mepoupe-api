@@ -25,6 +25,31 @@ export const isCep = (cep: string) => {
 };
 
 export const timeExp = 60 * 5;
+export const addressOne = {
+  cep: '18150-000',
+  logradouro: '',
+  complemento: '',
+  bairro: '',
+  localidade: 'Ibiúna',
+  uf: 'SP',
+  ibge: '3519709',
+  gia: '3451',
+  ddd: '15',
+  siafi: '6495',
+};
+
+export const addressTwo = {
+  cep: '13172-560',
+  logradouro: 'Rua Emília Giraldi Quental',
+  complemento: 'até 500/501',
+  bairro: 'Parque João de Vasconcelos',
+  localidade: 'Sumaré',
+  uf: 'SP',
+  ibge: '3552403',
+  gia: '6713',
+  ddd: '19',
+  siafi: '7149',
+};
 
 export const calcAverage = (numberOne, numberTwo) => {
   const calc = (Number(numberOne) + Number(numberTwo)) / 2;

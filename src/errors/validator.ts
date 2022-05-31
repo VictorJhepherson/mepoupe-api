@@ -37,7 +37,7 @@ export const averageValidator = (numberOne, numberTwo) => {
 
   if (isNaN(Number(numberOne)) || isNaN(Number(numberTwo))) {
     IReturn.success = false;
-    IReturn.errors.push('Os campos devem ser números!');
+    IReturn.errors.push('Os campos devem ser numéricos!');
     return IReturn;
   }
 
